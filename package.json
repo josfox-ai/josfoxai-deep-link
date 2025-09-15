@@ -1,0 +1,18 @@
+{
+  "name": "josfoxai-deep-link",
+  "version": "0.1.0",
+  "description": "Deep link helper for JOSFOX AI apps (iOS & Android) with fallback to josfox.ai",
+  "main": "dist/index.umd.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "npx terser src/index.js -o dist/index.min.js --compress --mangle && rollup src/index.js --file dist/index.umd.js --format umd --name josfoxaiDeepLink"
+  },
+  "keywords": ["josfox", "deep-link", "josfoxai", "ios", "android"],
+  "author": "JOSFOX <jos@josfox.mx>",
+  "license": "MIT",
+  "homepage": "https://josfox.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josfox/josfoxai-deep-link"
+  }
+}
